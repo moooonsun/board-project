@@ -1,12 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import List from './comp/board/BoardList'
 
 function App() {
   return (
     <div className="App">
-      <h1>gdgd</h1>
+      <BrowserRouter>
+        <About />
+        <Routes>
+          <Route path={"/boardList"} element={<List />} />
+   
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
+function About() {
+  return (
+    <div>
+      <Link to="/boardList">Main</Link><br />
+    </div>
+  )
+}
+
 
 export default App;
