@@ -11,6 +11,8 @@ function App() {
         <Routes>
           <Route path={"/boardList"} element={<List />} />
           <Route path={"/boardRegist"} element={<Regist />} />
+          <Route path={"/boardFind"} element={<Find />} />
+          <Route path={"/boardModify"} element={<Modify />} />
         </Routes>
       </BrowserRouter>
     </div>
@@ -25,4 +27,4 @@ function About() {
 }
 
 
-export default App;
+export default A
