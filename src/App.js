@@ -2,7 +2,7 @@
 import './App.css';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import List from './comp/board/BoardList'
-
+import Regist from './comp/board/BoardRegist'
 function App() {
   return (
     <div className="App">
@@ -10,7 +10,7 @@ function App() {
         <About />
         <Routes>
           <Route path={"/boardList"} element={<List />} />
-   
+          <Route path={"/boardRegist"} element={<Regist />} />
         </Routes>
       </BrowserRouter>
     </div>
